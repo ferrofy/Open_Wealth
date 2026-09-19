@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --BG_Color: #050505;
+    --Body_BG_Color: #0A0A0A;
+    --Div_BG_Color: #101010;
+    --Border_Color: #242424;
+    --White: #F5F5F5;
+    --Gold: #caaf56;
+    --Bitcoin: #ff910a;
+}
+
+body {
+    background-color: var(--Body_BG_Color);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: var(--BG_Color);
+    color: var(--White);
+    padding: 15px 0px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+div {
+    background-color: var(--Div_BG_Color);
+    margin: 10px;
+    color: var(--White);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Chart_Box {
+    height: 336px;
+}
+
+.Chart_Box_Ele {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Asset_List {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 100px 100px 0px 0px;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BTC_Asset_Box,
+.Gold_Asset_Box {
+    border: 1px solid var(--White);
+    width: 10px;
+    height: 10px;
+}
+
+.BTC_Asset_Box {
+    background-color: var(--Bitcoin);
+}
+
+.Gold_Asset_Box {
+    background-color: var(--Gold);
+}
+
+.Chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Empty_Space {
+    padding: 0px 50px 0px 15%;
+}
+
+.Assets_Bar {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Assets_Inner {
+    width: 140px;
+    height: 140px;
+    background: var(--Body_BG_Color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--White);
+}
+
+.Balance {
+    background-color: var(--Border_Color);
+    display: flex;
+    justify-content: space-between;
+    height: 140px;
+}
+
+.BTC_Balance,
+.Gold_Balance {
+    width: 50%;
+    height: 100px;
+    display: flex;
+    gap: 25%;
+}
+
+.BTC_Balance img,
+.Gold_Balance img {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+.Asset_Logo {
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    .Chart_Box {
+        height: auto;
+    }
+
+    .Chart_Box_Ele {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Empty_Space {
+        display: none;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .Balance {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .BTC_Balance,
+    .Gold_Balance {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .BTC_Balance img,
+    .Gold_Balance img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    .Assets_Bar {
+        width: 150px;
+        height: 150px;
+    }
+
+    .Assets_Inner {
+        width: 110px;
+        height: 110px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+}

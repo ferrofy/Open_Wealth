@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Wealth</title>
+    <link rel="shortcut icon" href="Images/FavIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Open Wealth</h1>
+    </header>
+    <main>
+
+        <div class="Chart_Box">
+            <h1>Assets Chart</h1>
+            <div class="Chart_Box_Ele">
+                <div class="Empty_Space"></div>
+                <div class="Chart">
+                    <div class="Assets_Bar">
+                        <div class="Assets_Inner">
+                            <div id="Assets_Text"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Asset_List">
+                    <ul>
+                        <li id="Asset_List_BTC"><div class="BTC_Asset_Box"></div> BTC</li>
+                        <li id="Asset_List_Gold"><div class="Gold_Asset_Box"></div> Gold</li>
+                        <li id="Assets_Total">Total: Loading....</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="Balance">
+            <div class="BTC_Balance">
+                <div class="Asset_Logo">
+                    <img src="Images/BTC_Image.png" alt="Bitcoin Image">
+                </div>
+                <div class="Asset_Data">
+                    <h1>BTC</h1>
+                    <p id="BTC"></p>
+                </div>
+            </div>
+            <div class="Gold_Balance">
+                <div class="Asset_Logo">
+                    <img src="Images/Gold_Image.png" alt="Gold Image">
+                </div>
+                <div class="Asset_Data">
+                    <h1>Gold</h1>
+                    <p id="Gold"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="JS.js"></script>
+</body>
+
+</html>
