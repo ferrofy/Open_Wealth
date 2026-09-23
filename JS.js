@@ -7,7 +7,7 @@ const Asset_List_Gold = document.getElementById("Asset_List_Gold")
 const Assets_Total = document.getElementById("Assets_Total")
 
 BTC_Bal = { GoSats: 1258 }
-const Gold_Bal = { GoSats: 5.92, Paytm: 0.3 }
+const Gold_Bal = { GoSats: 5.92, Paytm: 0.6 }
 
 let Total_BTC = 0
 let Total_Gold = 0
