@@ -6,11 +6,17 @@ const Asset_List_BTC = document.getElementById("Asset_List_BTC")
 const Asset_List_Gold = document.getElementById("Asset_List_Gold")
 const Assets_Total = document.getElementById("Assets_Total")
 
-BTC_Bal = { GoSats: 1258 }
+const BTC_Bal = { GoSats: 1398 }
 const Gold_Bal = { GoSats: 5.92, Paytm: 0.6 }
+const Silver_Bal = { Paytm: 0 }
+const Stocks_Bal = {}
+const FD_Bal = {}
 
 let Total_BTC = 0
 let Total_Gold = 0
+// let Total_Silver = 0
+// let Total_Stocks = 0
+// let Total_FD = 0
 
 for (const App in Gold_Bal) {
     Total_Gold += Number((Gold_Bal[App] / 1000).toFixed(5))
@@ -20,12 +26,30 @@ for (const App in BTC_Bal) {
     Total_BTC += Number((BTC_Bal[App] / 100000000).toFixed(8))
 }
 
-const Gold_Market_Price = 20000
-const BTC_Market_Price = 10000000
+// for (const App in BTC_Bal) {
+//     Total_Silver += Number((BTC_Bal[App] / 100000000).toFixed(8))
+// }
 
-const Gold_In_Rs = Number((Total_Gold * Gold_Market_Price).toFixed(2))
+// for (const App in BTC_Bal) {
+//     Total_Stocks += Number((BTC_Bal[App] / 100000000).toFixed(8))
+// }
+
+// for (const App in BTC_Bal) {
+//     Total_FD += Number((BTC_Bal[App] / 100000000).toFixed(8))
+// }
+
+const BTC_Market_Price = 10000000
+const Gold_Market_Price = 20000
+// const Silver_Market_Price = 20000
+// const Stocks_Market_Price = 10000000
+// const FD_Market_Price = 20000
+
 const BTC_In_Rs = Number((Total_BTC * BTC_Market_Price).toFixed(2))
-const Total_Rs = BTC_In_Rs + Gold_In_Rs
+const Gold_In_Rs = Number((Total_Gold * Gold_Market_Price).toFixed(2))
+// const Silver_In_Rs = Number((Total_Silver * Silver_Market_Price).toFixed(2))
+// const Stocks_In_Rs = Number((Total_Stocks * Stocks_Market_Price).toFixed(2))
+// const FD_In_Rs = Number((Total_FD * FD_Market_Price).toFixed(2))
+const Total_Rs = Number((BTC_In_Rs + Gold_In_Rs).toFixed(2))
 
 let BTC_Precentage = 0
 
