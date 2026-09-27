@@ -17,7 +17,7 @@ const Assets_Total = document.getElementById("Assets_Total")
 
 const BTC_Bal = { GoSats: 1398 }
 const Gold_Bal = { GoSats: 5.92, Paytm: 0.6 }
-const Silver_Bal = { Paytm: 0 }
+const Silver_Bal = { Paytm: 0.1183 }
 const Stocks_Bal = {}
 const FD_Bal = {}
 
