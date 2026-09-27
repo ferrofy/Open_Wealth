@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Wealth</title>
     <link rel="shortcut icon" href="Images/FavIcon.png" type="image/x-icon">
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/Responsiveness.css">
 </head>
 
 <body>
@@ -28,8 +29,21 @@
                 </div>
                 <div class="Asset_List">
                     <ul>
-                        <li id="Asset_List_BTC"><div class="BTC_Asset_Box"></div> BTC</li>
-                        <li id="Asset_List_Gold"><div class="Gold_Asset_Box"></div> Gold</li>
+                        <li id="Asset_List_BTC">
+                            <div class="BTC_Asset_Box"></div> BTC
+                        </li>
+                        <li id="Asset_List_Gold">
+                            <div class="Gold_Asset_Box"></div> Gold
+                        </li>
+                        <li id="Asset_List_Silver">
+                            <div class="Silver_Asset_Box"></div> Silver
+                        </li>
+                        <li id="Asset_List_Stocks">
+                            <div class="Stocks_Asset_Box"></div> Stocks
+                        </li>
+                        <li id="Asset_List_FD">
+                            <div class="FD_Asset_Box"></div> FD
+                        </li>
                         <li id="Assets_Total">Total: Loading....</li>
                     </ul>
                 </div>
@@ -37,6 +51,7 @@
         </div>
 
         <div class="Balance">
+
             <div class="BTC_Balance">
                 <div class="Asset_Logo">
                     <img src="Images/BTC_Image.png" alt="Bitcoin Image">
@@ -46,6 +61,7 @@
                     <p id="BTC"></p>
                 </div>
             </div>
+
             <div class="Gold_Balance">
                 <div class="Asset_Logo">
                     <img src="Images/Gold_Image.png" alt="Gold Image">
@@ -55,10 +71,41 @@
                     <p id="Gold"></p>
                 </div>
             </div>
+
+            <div class="Silver_Balance">
+                <div class="Asset_Logo">
+                    <img src="Images/Silver_Image.png" alt="Silver Image">
+                </div>
+                <div class="Asset_Data">
+                    <h1>Silver</h1>
+                    <p id="Silver"></p>
+                </div>
+            </div>
+
+            <div class="Stocks_Balance">
+                <div class="Asset_Logo">
+                    <img src="Images/Stocks_Image.png" alt="Stocks Image">
+                </div>
+                <div class="Asset_Data">
+                    <h1>Stocks</h1>
+                    <p id="Stocks"></p>
+                </div>
+            </div>
+
+            <div class="FD_Balance">
+                <div class="Asset_Logo">
+                    <img src="Images/FD_Image.png" alt="FD Image">
+                </div>
+                <div class="Asset_Data">
+                    <h1>FD</h1>
+                    <p id="FD"></p>
+                </div>
+            </div>
+
         </div>
     </main>
 
-    <script src="JS.js"></script>
+    <script src="JS/JS.js"></script>
 </body>
 
 </html>

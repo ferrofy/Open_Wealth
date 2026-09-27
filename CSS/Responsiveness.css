@@ -1,0 +1,100 @@
+@media (max-width: 900px) {
+    main {
+        width: min(100% - 20px, 1200px);
+    }
+
+    .Chart_Box_Ele {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .Empty_Space {
+        display: none;
+    }
+
+    .Asset_List {
+        width: 100%;
+    }
+
+    .Asset_List ul {
+        padding: 0;
+    }
+
+    .Balance {
+        grid-template-columns: 1fr;
+    }
+
+    .BTC_Balance {
+        grid-column: auto;
+    }
+
+    .Gold_Balance,
+    .Silver_Balance,
+    .Stocks_Balance,
+    .FD_Balance {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 620px) {
+    header {
+        padding: 18px 12px;
+    }
+
+    main {
+        width: min(100% - 14px, 1200px);
+    }
+
+    .Chart_Box,
+    .Balance {
+        padding: 15px;
+        margin: 16px 0;
+    }
+
+    .Chart_Box h1 {
+        font-size: 1.6rem;
+    }
+
+    .Assets_Bar {
+        width: 220px;
+        height: 220px;
+    }
+
+    .Assets_Inner {
+        width: 150px;
+        height: 150px;
+    }
+
+    .Asset_List li {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .BTC_Balance,
+    .Gold_Balance,
+    .Silver_Balance,
+    .Stocks_Balance,
+    .FD_Balance {
+        gap: 12px;
+        padding: 14px 12px;
+    }
+
+    .Asset_Logo {
+        width: 70px;
+        min-width: 70px;
+        height: 70px;
+    }
+
+    .Asset_Logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .Asset_Data h1 {
+        font-size: 1.2rem;
+    }
+
+    .Asset_Data p {
+        font-size: 0.9rem;
+    }
+}
