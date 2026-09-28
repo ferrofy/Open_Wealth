@@ -23,9 +23,9 @@ const Silver_Expected_Market_Price = 300
 const Stocks_Expected_Market_Price = 0
 const FD_Expected_Market_Price = 0
 
-fetch("../Data/Balance.json")
+fetch("https://raw.githubusercontent.com/ferrofy/Open_Wealth/main/Data/Balance.json")
     .catch(() => {
-        return fetch("https://raw.githubusercontent.com/ferrofy/Open_Wealth/main/Data/Balance.json")
+        return fetch("../Data/Balance.json")
     })
     .then(Response => Response.json())
     .then(Balance => {
