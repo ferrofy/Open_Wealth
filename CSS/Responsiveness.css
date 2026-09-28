@@ -24,7 +24,7 @@
         grid-template-columns: 1fr;
     }
 
-    .BTC_Balance {
+    .Crypto_Balance {
         grid-column: auto;
     }
 
@@ -70,7 +70,7 @@
         text-align: center;
     }
 
-    .BTC_Balance,
+    .Crypto_Balance,
     .Gold_Balance,
     .Silver_Balance,
     .Stocks_Balance,

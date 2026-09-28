@@ -125,7 +125,7 @@ header h1 {
     border-radius: 10px;
 }
 
-.BTC_Asset_Box,
+.Crypto_Asset_Box,
 .Gold_Asset_Box,
 .Silver_Asset_Box,
 .Stocks_Asset_Box,
@@ -136,7 +136,7 @@ header h1 {
     border-radius: 3px;
 }
 
-.BTC_Asset_Box {
+.Crypto_Asset_Box {
     background-color: var(--Bitcoin);
 }
 
@@ -164,11 +164,11 @@ header h1 {
     padding: 18px;
 }
 
-.BTC_Balance {
+.Crypto_Balance {
     grid-column: 1 / 3;
 }
 
-.BTC_Balance,
+.Crypto_Balance,
 .Gold_Balance,
 .Silver_Balance,
 .Stocks_Balance,
@@ -196,7 +196,7 @@ header h1 {
     margin: 0;
 }
 
-.BTC_Balance img,
+.Crypto_Balance img,
 .Gold_Balance img,
 .Silver_Balance img,
 .Stocks_Balance img,
