@@ -23,7 +23,11 @@ const Silver_Expected_Market_Price = 300
 const Stocks_Expected_Market_Price = 0
 const FD_Expected_Market_Price = 0
 
-fetch("../Data/Balance.json").then(Response => Response.json())
+fetch("../Data/Balance.json")
+    .catch(() => {
+        return fetch("https://raw.githubusercontent.com/ferrofy/Open_Wealth/main/Data/Balance.json")
+    })
+    .then(Response => Response.json())
     .then(Balance => {
         const BTC = Object.values(Balance.Crypto.BTC).reduce((Sum, Val) => Sum + Val, 0);
         const Gold = Object.values(Balance.Gold).reduce((Sum, Val) => Sum + Val, 0);
@@ -76,4 +80,4 @@ fetch("../Data/Balance.json").then(Response => Response.json())
         Asset_List_FD.innerHTML = `<div class="FD_Asset_Box"></div> FD ~ ₹ ${FD_In_Rs}`
 
         Assets_Total.innerHTML = `Total ~ ₹ ${Total_Rs}`
-    });
+    })
