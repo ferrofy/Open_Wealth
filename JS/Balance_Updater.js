@@ -65,7 +65,7 @@ fetch("https://raw.githubusercontent.com/ferrofy/Open_Wealth/main/Data/Balance.j
     var(--FD) ${Total_Precentage}% 100%
     )`
 
-        Assets_Text.innerHTML = `Crypto: ${Crypto_Precentage}% <br><br> Gold: ${Gold_Precentage}% <br><br> Silver: ${Silver_Precentage}% <br><br> Stocks: ${Stocks_Precentage}% <br><br> FD: ${FD_Precentage}%`
+        Assets_Text.innerHTML = `Crypto: ${Crypto_Precentage}% <br> Gold: ${Gold_Precentage}% <br> Silver: ${Silver_Precentage}% <br> Stocks: ${Stocks_Precentage}% <br> FD: ${FD_Precentage}%`
 
         Crypto_Amt.innerHTML = `Total Amount: ${Number((Total_Crypto).toFixed(8))}`
         Gold_Amt.innerHTML = `Total Amount: ${Number((Total_Gold).toFixed(5))} g`

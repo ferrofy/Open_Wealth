@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Wealth</title>
     <link rel="shortcut icon" href="Images/FavIcon.png" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/Style.css">
-    <link rel="stylesheet" href="CSS/Responsiveness.css">
+    <link rel="stylesheet" href="CSS/Balance.css">
+    <link rel="stylesheet" href="CSS/Mobile/Responsive.css">
+    <link rel="stylesheet" href="CSS/Basics.css">
+    <link rel="stylesheet" href="CSS/Header.css">
+    <link rel="stylesheet" href="CSS/Chart.css">
 </head>
 
 <body>
@@ -19,7 +22,20 @@
         <div class="Chart_Box">
             <h1>Assets Chart</h1>
             <div class="Chart_Box_Ele">
-                <div class="Empty_Space"></div>
+                <div class="Asset_List_1">
+                    <ul>
+                        <li id="Asset_List_Crypto">
+                            <div class="Crypto_Asset_Box"></div> Crypto ~ Loading...
+                        </li>
+                        <li id="Asset_List_Gold">
+                            <div class="Gold_Asset_Box"></div> Gold ~ Loading...
+                        </li>
+                        <li id="Asset_List_Silver">
+                            <div class="Silver_Asset_Box"></div> Silver ~ Loading...
+                        </li>
+                    </ul>
+                </div>
+
                 <div class="Chart">
                     <div class="Assets_Bar">
                         <div class="Assets_Inner">
@@ -27,22 +43,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="Asset_List">
+
+                <div class="Asset_List_2">
                     <ul>
-                        <li id="Asset_List_Crypto">
-                            <div class="Crypto_Asset_Box"></div> Crypto
-                        </li>
-                        <li id="Asset_List_Gold">
-                            <div class="Gold_Asset_Box"></div> Gold
-                        </li>
-                        <li id="Asset_List_Silver">
-                            <div class="Silver_Asset_Box"></div> Silver
-                        </li>
                         <li id="Asset_List_Stocks">
-                            <div class="Stocks_Asset_Box"></div> Stocks
+                            <div class="Stocks_Asset_Box"></div> Stocks ~ Loading...
                         </li>
                         <li id="Asset_List_FD">
-                            <div class="FD_Asset_Box"></div> FD
+                            <div class="FD_Asset_Box"></div> FD ~ Loading...
                         </li>
                         <li id="Assets_Total">Total: Loading....</li>
                     </ul>
@@ -105,7 +113,7 @@
         </div>
     </main>
 
-    <script src="JS/JS.js"></script>
+    <script src="JS/Balance_Updater.js"></script>
 </body>
 
 </html>

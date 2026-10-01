@@ -1,15 +1,15 @@
 {
     "Crypto": {
         "BTC": {
-            "GoSats": 1805
+            "GoSats": 1929
         }
     },
     "Gold": {
-        "GoSats": 7.976,
+        "GoSats": 7.98,
         "Paytm": 0.06
     },
     "Silver": {
-        "Paytm": 0.1183
+        "Paytm": 0.2210
     },
     "Stocks": {},
     "FD": {}

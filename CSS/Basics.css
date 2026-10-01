@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --BG_Color: #050505;
+    --Body_BG_Color: #0A0A0A;
+    --Div_BG_Color: #101010;
+    --Border_Color: #242424;
+    --White: #fff;
+    --Black: #000;    
+    --Gold: #caaf56;
+    --Bitcoin: #ff910a;
+    --Silver: #C0C0C0;
+    --Stocks: #1C8B15;
+    --FD: #00409E;
+    --Assets_Border: #00ff004f;
+}
+
+body {
+    background-color: var(--Body_BG_Color);
+    font-family: Arial, sans-serif;
+    color: var(--White);
+}
+
+main {
+    width: min(1200px, calc(100% - 30px));
+    margin: 0 auto 30px;
+}
