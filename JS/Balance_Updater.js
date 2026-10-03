@@ -23,7 +23,35 @@ const Silver_Expected_Market_Price = 300
 const Stocks_Expected_Market_Price = 0
 const FD_Expected_Market_Price = 0
 
-fetch("https://raw.githubusercontent.com/ferrofy/Open_Wealth/main/Data/Balance.json")
+let BTC_Variance_Market_Price = Number((BTC_Expected_Market_Price * (100 - Variation()) / 100).toFixed(2))
+let Gold_Variance_Market_Price = Number((Gold_Expected_Market_Price * (100 - Variation()) / 100).toFixed(2))
+let Silver_Variance_Market_Price = Number((Silver_Expected_Market_Price * (100 - Variation()) / 100).toFixed(2))
+let Stocks_Variance_Market_Price = Number((Stocks_Expected_Market_Price * (100 - Variation()) / 100).toFixed(2))
+let FD_Variance_Market_Price = Number((FD_Expected_Market_Price * (100 - Variation()) / 100).toFixed(2))
+
+console.log(BTC_Variance_Market_Price)
+console.log(Gold_Variance_Market_Price)
+console.log(Silver_Variance_Market_Price)
+console.log(Stocks_Variance_Market_Price)
+console.log(FD_Variance_Market_Price)
+
+function Correct_Vari(Vari) {
+    Vari = Number(Vari)
+
+    if (Vari < -5 || Vari > 5) {
+        return Correct_Vari(Vari / 10)
+    }
+
+    return Vari
+}
+
+function Variation() {
+    let Vari = (((Math.random() * 10) / (Math.random() * 5) + 1) * (Math.random() < 0.5 ? -1 : 1)).toFixed(2)
+    return Correct_Vari(Vari)
+}
+
+
+fetch("https://raw.githubuser content.com/ferrofy/Open_Wealth/main/Data/Balance.json")
     .catch(() => {
         return fetch("../Data/Balance.json")
     })
@@ -41,12 +69,11 @@ fetch("https://raw.githubusercontent.com/ferrofy/Open_Wealth/main/Data/Balance.j
         let Total_Stocks = Stocks
         let Total_FD = FD
 
-
-        const Crypto_In_Rs = Number((Total_Crypto * BTC_Expected_Market_Price).toFixed(2))
-        const Gold_In_Rs = Number((Total_Gold * Gold_Expected_Market_Price).toFixed(2))
-        const Silver_In_Rs = Number((Total_Silver * Silver_Expected_Market_Price).toFixed(2))
-        const Stocks_In_Rs = Number((Total_Stocks * Stocks_Expected_Market_Price).toFixed(2))
-        const FD_In_Rs = Number((Total_FD * FD_Expected_Market_Price).toFixed(2))
+        const Crypto_In_Rs = Number((Total_Crypto * BTC_Variance_Market_Price).toFixed(2))
+        const Gold_In_Rs = Number((Total_Gold * Gold_Variance_Market_Price).toFixed(2))
+        const Silver_In_Rs = Number((Total_Silver * Silver_Variance_Market_Price).toFixed(2))
+        const Stocks_In_Rs = Number((Total_Stocks * Stocks_Variance_Market_Price).toFixed(2))
+        const FD_In_Rs = Number((Total_FD * FD_Variance_Market_Price).toFixed(2))
         const Total_Rs = Number((Crypto_In_Rs + Gold_In_Rs + Silver_In_Rs + Stocks_In_Rs + FD_In_Rs).toFixed(2))
 
         let Crypto_Precentage = Number(((Crypto_In_Rs / Total_Rs) * 100).toFixed(2))
