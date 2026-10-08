@@ -51,7 +51,7 @@ function Variation() {
 }
 
 
-fetch("https://raw.githubuser content.com/ferrofy/Open_Wealth/main/Data/Balance.json")
+fetch("https://raw.githubusercontent.com/ferrofy/Open_Wealth/main/Data/Balance.json")
     .catch(() => {
         return fetch("../Data/Balance.json")
     })
